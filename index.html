@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        *{
+            font-family: 'Raleway', sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height: 400px;
+            margin-left: 200px;
+        }
+        .section1{
+            display: flex;
+            width: 13%;
+            height: 85%;
+        }
+        .section1 .first{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+        } 
+        .first div{
+            border: 2px solid black;
+            width: 80%;
+            height: 11%;
+            margin-top: 10px;
+            background-color: rgb(117, 156, 39);
+
+        }
+        .first #f1{
+            text-align: center;
+            color: white;
+            background-color: brown;
+            font-size: 25px;
+            margin-bottom: 2px;
+        }
+        .section1 .second{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 30%;
+            height: 100%;
+        }
+        .second div{
+            border: 2px solid black;
+            width: 80%;
+            height: 10%;
+            margin-top: 10.50px;
+            background-color:rgb(232, 61, 93);
+            margin-left: 10px;
+            text-align: center;
+        }
+        .second div p{
+            margin-top: -0.1px;
+        }
+        .third{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 30%;
+            height: 100%;
+        }
+        .third div{
+            border: 4px solid black;
+            width: 75%;
+            height: 9%;
+            margin-top: 9px;
+            background-color:wheat;
+            margin-left: 17px;
+        }
+        .container2{
+            height: 100%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+        .section2{
+            height: 37%;
+            width: 100%;
+            
+        }
+        .section2 div{
+            margin-top: 10px;
+            background-color: rgb(117, 156, 39);
+            width: 30%;
+            height: 85%;
+            border: 2px solid black;
+        }
+        .section2 div #p1{
+            text-align: right;
+            font-size: 17px;
+            margin-right: 5px;
+        }
+        .section2 div #p2{
+            text-align: left;
+            font-size: 50px;
+            margin-top: -10px;
+            margin-left: 5px;
+        }
+        .section2 div #p3{
+            text-align: left;
+            font-size: 16px;
+            margin-left: 5px;
+            margin-top: -50px;
+        }
+        .section3{
+            display: flex;
+            width: 100%;
+            height: 47%;
+            margin-top: 4px;
+            margin-left: 7px;
+        }
+        .section3 .line{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-left: 5px;
+        }
+        .line div{
+            border: 2px solid black;
+            width: 80%;
+            height: 27%;
+            margin-top: 7px;
+            margin-bottom: 3px;
+            background-color: blue;
+        }
+        .line #last{
+            margin-bottom: 5px;
+        }
+        .section4{
+            display: flex;
+            width: 35%;
+            margin-left: 10px;
+        }
+        .section4 .line3{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 10%;
+            height: 88%;
+        }
+        .line3 div{
+            border: 2px solid black;
+            width: 80%;
+            height: 9.5%;
+            margin-bottom: 18px;
+            margin-top: -8px;
+        }
+        #yellow{
+            background-color: rgb(255, 221, 0);
+        }
+        #brown{
+            background-color: rgb(88, 45, 45);
+        }
+        #pink{
+            background-color: rgb(243, 67, 137);
+        }
+        #purpal{
+            background-color: rgb(167, 29, 167);
+        }
+        #orange{
+            background-color: rgb(255, 102, 0);
+        }
+        #green{
+            background-color: rgb(23, 171, 23);
+        }
+        .container3{
+            display: flex;
+            width: 35%;
+            height: 75px;
+            border: 2px solid rebeccapurple;
+            margin: auto;
+            flex-direction: column;
+        }
+        .container3 #half{
+            width: 100%;
+            height: 50%;
+            border: 1px solid rgb(42, 19, 19);
+            display: flex;
+            background-color: rgb(55, 98, 55);
+        }
+        .container3 #half div{
+            width: 7%;
+            height: 100%;
+            border: 1px solid rgb(42, 19, 19);
+        }
+        .container3 #half1{
+            width: 100%;
+            height: 50%;
+            border: 1px solid rgb(42, 19, 19);
+            display: flex;
+            background-color: rgb(106, 171, 106);
+        }
+        .container3 #half1 div{
+            width: 7%;
+            height: 100%;
+            border: 1px solid rgb(42, 19, 19);
+        }
+        #white{
+            color: white;
+            text-align: left;
+            margin-bottom: -1px;
+        }
+        #center{
+            text-align: center;
+        }
+        #end{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>THE PERIODIC TABLE OF ELEMENTS</h2>
+    <div class="container">
+        <div class="section1">
+            <div class="first">
+                <div id="f1">H</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="second">
+                <div><p>88</p></div>
+                <div><p>56</p></div>
+                <div><p>38</p></div>
+                <div><p>20</p></div>
+                <div><p>12</p></div>
+                <div><p>4</p></div>
+            </div>
+            <div class="third">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    <div class="container2">
+        <div class="section2">
+            <div>
+                <p id="p1">14</p>
+                <p id="p2">Si</p>
+                <p id="p3">Silicon</p>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="last"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="orange"></div>
+            <div id="orange"></div>
+            <div id="orange"></div>
+            <div id="orange"></div>
+            <div id="purpal"></div>
+        </div>
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="orange"></div>
+            <div id="orange"></div>
+            <div id="purpal"></div>
+            <div id="purpal"></div>
+            <div id="green"></div>
+        </div>
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="orange"></div>
+            <div id="purpal"></div>
+            <div id="purpal"></div>
+            <div id="green"></div>
+            <div id="green"></div>
+        </div>
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="purpal"></div>
+            <div id="purpal"></div>
+            <div id="green"></div>
+            <div id="green"></div>
+            <div id="green"></div>
+        </div>
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="pink"></div>
+            <div id="pink"></div>
+            <div id="pink"></div>
+            <div id="pink"></div>
+            <div id="pink"></div>
+        </div>
+        <div class="line3">
+            <div id="brown"></div>
+            <div id="yellow"></div>
+            <div id="yellow"></div>
+            <div id="yellow"></div>
+            <div id="yellow"></div>
+            <div id="yellow"></div>
+            <div id="yellow"></div>
+        </div>
+    </div>
+    </div>
+    <div class="container3">
+        <div id="half">
+            <div id="white">La</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="half1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="center">Am</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="end">No</div>
+        </div>
+    </div>
+</body>
+</html>
